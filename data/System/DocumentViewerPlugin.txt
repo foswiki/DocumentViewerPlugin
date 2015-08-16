@@ -40,6 +40,6 @@ Dependencies: %$DEPENDENCIES%
 %META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
 %META:FIELD{name="Copyright" value="2015, PhilippGortan, All Rights Reserved"}%
 %META:FIELD{name="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
-%META:FIELD{name="Repository" value="https://github.com/mephinet/%$ROOTMODULE%"}%
+%META:FIELD{name="Repository" value="https://github.com/foswiki/%$ROOTMODULE%"}%
 %META:FIELD{name="Home" value="http://foswiki.org/Extensions/%$ROOTMODULE%"}%
 %META:FIELD{name="Support" value="http://foswiki.org/Support/%$ROOTMODULE%"}%

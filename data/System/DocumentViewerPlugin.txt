@@ -1,0 +1,45 @@
+%META:TOPICINFO{author="ProjectContributor" date="1426439233" format="1.1" version="1"}%
+%META:TOPICPARENT{name="Plugins"}%
+<!--
+One line description, required for extensions repository catalog.
+   * Set SHORTDESCRIPTION = Embed presentations, spreadsheets, PDFs and other documents
+-->
+---+!! Document Viewer Plugin
+
+%SHORTDESCRIPTION%
+
+%TOC%
+
+The Document Viewer Plugin allows you to use presentations, spreadsheets, PDFs and other documents in Foswiki without any external dependencies. No tricks, no conversions, no unexpected downtime from external services, and no plugins required – it happens to work just fine in all major browsers today.
+
+Document Viewer Plugin uses [[http://viewerjs.org/][viewerjs]], which makes use of [[http://mozilla.github.io/pdf.js/][pdf.js]] and [[http://webodf.org/][webodf]] to perform the rendering.
+
+---++ Supported formats
+
+   * [[http://opendocumentformat.org/][Open Document Format]]
+   * [[https://en.wikipedia.org/wiki/Portable_Document_Format][Portable Document Format]] (PDF)
+
+---++ Preferences
+
+Currently, there aren't any preferences to be configured.
+
+---++ Installation
+%$INSTALL_INSTRUCTIONS%
+
+---++ Example
+
+=%<nop>DOCUMENTVIEWER{"presentation.pdf"}%=
+
+---++ Info
+
+Dependencies: %$DEPENDENCIES%
+
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="Author" title="Author" value="PhilippGortan"}%
+%META:FIELD{name="Version" title="Version" value="%$VERSION%"}%
+%META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
+%META:FIELD{name="Copyright" value="2015, PhilippGortan, All Rights Reserved"}%
+%META:FIELD{name="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
+%META:FIELD{name="Repository" value="https://github.com/mephinet/%$ROOTMODULE%"}%
+%META:FIELD{name="Home" value="http://foswiki.org/Extensions/%$ROOTMODULE%"}%
+%META:FIELD{name="Support" value="http://foswiki.org/Support/%$ROOTMODULE%"}%

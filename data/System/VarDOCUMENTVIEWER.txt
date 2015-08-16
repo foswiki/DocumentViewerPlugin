@@ -1,0 +1,24 @@
+%META:TOPICINFO{author="ProjectContributor" date="1434650530" format="1.1" version="1"}%
+%META:TOPICPARENT{name="Macros"}%
+---+ DOCUMENTVIEWER -- Embed a presentation, spreadsheet, PDF or other document in a viewer
+The =%<nop>DOCUMENTVIEWER%= variable is handled by the DocumentViewerPlugin
+
+---++ Parameters
+   | *Parameter* | *Description* | *Default* |
+   | ="attachment"= | Name of attachment to embed | |
+   | =web= | Web | the current web |
+   | =topic= | Topic, or Web.Topic | the current topic |
+   | =height= | height of the embedded viewer | 1024 |
+   | =width= | width of the embedded viewer | 724 |
+   | =format= | predefined height and width | |
+
+You can either specify the parameters height and width, or alternatively choose one of the predefined formats <code>portrait</code>, <code>landscape</code> or <code>screen</code> (4:3).
+
+---++ Examples
+   * =%<nop>DOCUMENTVIEWER{"presentation.odp"}%=
+
+   * =%<nop>DOCUMENTVIEWER{"presentation.odp" height="600" width="800"}%=
+
+   * =%<nop>DOCUMENTVIEWER{"specification.pdf" web="Projects" topic="SomeProduct" format="portrait"}%=
+
+%STOPINCLUDE%

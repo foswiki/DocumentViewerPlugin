@@ -1,0 +1,27 @@
+!noci
+data/System/DocumentViewerPlugin.txt 0444 Documentation page
+data/System/VarDOCUMENTVIEWER.txt 0444 Tag documentation
+lib/Foswiki/Plugins/DocumentViewerPlugin.pm 0444 Perl module
+lib/Foswiki/Plugins/DocumentViewerPlugin/Config.spec 0444 Configuration
+pub/System/DocumentViewerPlugin/ViewerJS/compatibility.js 0444
+pub/System/DocumentViewerPlugin/ViewerJS/example.local.css 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/kogmbh.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/nlnet.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/texture.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-download.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-fullscreen.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-menuArrows.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-pageDown.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-pageUp.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-presentation.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-zoomIn.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/images/toolbarButton-zoomOut.png 0444
+pub/System/DocumentViewerPlugin/ViewerJS/index.html 0444
+pub/System/DocumentViewerPlugin/ViewerJS/pdf.js 0444
+pub/System/DocumentViewerPlugin/ViewerJS/pdf.worker.js 0444
+pub/System/DocumentViewerPlugin/ViewerJS/pdfjsversion.js 0444
+pub/System/DocumentViewerPlugin/ViewerJS/text_layer_builder.js 0444
+pub/System/DocumentViewerPlugin/ViewerJS/ui_utils.js 0444
+pub/System/DocumentViewerPlugin/ViewerJS/webodf.js 0444
+test/unit/DocumentViewerPlugin/DocumentViewerPluginSuite.pm 0444
+test/unit/DocumentViewerPlugin/DocumentViewerPluginTests.pm 0444

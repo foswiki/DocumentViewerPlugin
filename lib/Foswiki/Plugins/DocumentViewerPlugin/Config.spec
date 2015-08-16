@@ -1,0 +1,3 @@
+# ---+ Extensions
+# ---++ DocumentViewerPlugin
+1;

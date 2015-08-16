@@ -1,2 +1,3 @@
-DocumentViewerPlugin*
-data/Sandbox
+/DocumentViewerPlugin.*
+/DocumentViewerPlugin_*
+/data/Sandbox

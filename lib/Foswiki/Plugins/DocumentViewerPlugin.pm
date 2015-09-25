@@ -48,8 +48,8 @@ sub _DOCUMENTVIEWER {
         return
 '<noautolink><span class="foswikiAlert">DocumentViewerPlugin error: Missing parameter to DOCUMENTVIEWER</span></noautolink>';
     }
-    my $web   = $params->{web}   || $web;
-    my $topic = $params->{topic} || $topic;
+    $web   = $params->{web}   || $web;
+    $topic = $params->{topic} || $topic;
 
     unless ( Foswiki::Func::attachmentExists( $web, $topic, $attachment ) ) {
         return

@@ -7,8 +7,8 @@ use warnings;
 use Foswiki::Func    ();    # The plugins API
 use Foswiki::Plugins ();    # For the API version
 
-our $VERSION = '1.00';
-our $RELEASE = '17 Aug 2015';
+our $VERSION = '1.1';
+our $RELEASE = '27 Sep 2015';
 our $SHORTDESCRIPTION =
   'Embed presentations, spreadsheets, PDFs and other documents';
 our $NO_PREFS_IN_TOPIC = 1;

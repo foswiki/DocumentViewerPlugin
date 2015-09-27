@@ -30,15 +30,21 @@ Currently, there aren't any preferences to be configured.
 
 =%<nop>DOCUMENTVIEWER{"presentation.pdf"}%=
 
+---++ Change History
+
+%TABLE%
+| 27 Sep 2015 | Foswiki:Main.MichaelDaum fixed masking warnings |
+| 16 Aug 2015 | Initial version |
+
 ---++ Info
 
 Dependencies: %$DEPENDENCIES%
 
 %META:FORM{name="PackageForm"}%
-%META:FIELD{name="Author" title="Author" value="PhilippGortan"}%
+%META:FIELD{name="Author" title="Author" value="Foswiki:Main.PhilippGortan"}%
 %META:FIELD{name="Version" title="Version" value="%$VERSION%"}%
 %META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
-%META:FIELD{name="Copyright" value="2015, PhilippGortan, All Rights Reserved"}%
+%META:FIELD{name="Copyright" value="2015, Foswiki:Main.PhilippGortan, Foswiki:Main.MichaelDaum. All Rights Reserved"}%
 %META:FIELD{name="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
 %META:FIELD{name="Repository" value="https://github.com/foswiki/%$ROOTMODULE%"}%
 %META:FIELD{name="Home" value="http://foswiki.org/Extensions/%$ROOTMODULE%"}%

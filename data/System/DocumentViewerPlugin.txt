@@ -1,12 +1,7 @@
-%META:TOPICINFO{author="ProjectContributor" date="1426439233" format="1.1" version="1"}%
+%META:TOPICINFO{author="ProjectContributor" date="1443423032" format="1.1" version="1"}%
 %META:TOPICPARENT{name="Plugins"}%
-<!--
-One line description, required for extensions repository catalog.
-   * Set SHORTDESCRIPTION = Embed presentations, spreadsheets, PDFs and other documents
--->
 ---+!! Document Viewer Plugin
-
-%SHORTDESCRIPTION%
+%FORMFIELD{"Description"}%
 
 %TOC%
 
@@ -23,12 +18,15 @@ Document Viewer Plugin uses [[http://viewerjs.org/][viewerjs]], which makes use 
 
 Currently, there aren't any preferences to be configured.
 
----++ Installation
-%$INSTALL_INSTRUCTIONS%
-
 ---++ Example
 
 =%<nop>DOCUMENTVIEWER{"presentation.pdf"}%=
+
+---++ Installation
+%$INSTALL_INSTRUCTIONS%
+
+---++ Dependencies
+%$DEPENDENCIES%
 
 ---++ Change History
 
@@ -36,16 +34,14 @@ Currently, there aren't any preferences to be configured.
 | 27 Sep 2015 | Foswiki:Main.MichaelDaum fixed masking warnings |
 | 16 Aug 2015 | Initial version |
 
----++ Info
-
-Dependencies: %$DEPENDENCIES%
 
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Foswiki:Main.PhilippGortan"}%
-%META:FIELD{name="Version" title="Version" value="%$VERSION%"}%
+%META:FIELD{name="Copyright" title="Copyright" value="2015, Foswiki:Main.PhilippGortan, Foswiki:Main.MichaelDaum. All Rights Reserved"}%
+%META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
+%META:FIELD{name="Home" title="Home" value="http://foswiki.org/Extensions/%$ROOTMODULE%"}%
+%META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
 %META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
-%META:FIELD{name="Copyright" value="2015, Foswiki:Main.PhilippGortan, Foswiki:Main.MichaelDaum. All Rights Reserved"}%
-%META:FIELD{name="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
-%META:FIELD{name="Repository" value="https://github.com/foswiki/%$ROOTMODULE%"}%
-%META:FIELD{name="Home" value="http://foswiki.org/Extensions/%$ROOTMODULE%"}%
-%META:FIELD{name="Support" value="http://foswiki.org/Support/%$ROOTMODULE%"}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%$ROOTMODULE%"}%
+%META:FIELD{name="Support" title="Support" value="http://foswiki.org/Support/%$ROOTMODULE%"}%
+%META:FIELD{name="Version" title="Version" value="%$VERSION%"}%

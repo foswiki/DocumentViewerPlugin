@@ -16,13 +16,6 @@ our $NO_PREFS_IN_TOPIC = 1;
 sub initPlugin {
     my ( $topic, $web, $user, $installWeb ) = @_;
 
-    # check for Plugins.pm versions
-    if ( $Foswiki::Plugins::VERSION < 2.3 ) {
-        Foswiki::Func::writeWarning( 'Version mismatch between ',
-            __PACKAGE__, ' and Plugins.pm' );
-        return 0;
-    }
-
     Foswiki::Func::registerTagHandler( 'DOCUMENTVIEWER', \&_DOCUMENTVIEWER );
 
     return 1;
@@ -56,11 +49,9 @@ sub _DOCUMENTVIEWER {
         return
 '<noautolink><span class="foswikiAlert">DocumentViewerPlugin error: Attachment does not exist</span></noautolink>';
     }
-    my $path = Foswiki::Func::getPubUrlPath( $web, $topic, $attachment );
-
-    my $viewer =
-      Foswiki::Func::getPubUrlPath( 'System', 'DocumentViewerPlugin',
-        'ViewerJS/index.html' );
+    my $path   = Foswiki::Func::getPubUrlPath() . "/$web/$topic/$attachment";
+    my $viewer = Foswiki::Func::getPubUrlPath()
+      . '/%SYSTEMWEB%/DocumentViewerPlugin/ViewerJS/index.html';
 
     my $url = $viewer . '#' . $path;
 
@@ -93,7 +84,7 @@ qq(<iframe src="$url" width="$width" height="$height" allowfullscreen webkitallo
 __END__
 Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 
-Copyright (C) 2015 Foswiki Contributors. Foswiki Contributors
+Copyright (C) 2015-2016 Foswiki Contributors. Foswiki Contributors
 are listed in the AUTHORS file in the root of this distribution.
 NOTE: Please extend that file, not this notice.
 

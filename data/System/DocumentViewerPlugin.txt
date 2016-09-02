@@ -31,17 +31,18 @@ Currently, there aren't any preferences to be configured.
 ---++ Change History
 
 %TABLE%
-| 27 Sep 2015 | Foswiki:Main.MichaelDaum fixed masking warnings |
+| 02 Sep 2016 | make it backwards compatible |
+| 27 Sep 2015 | fixed masking warnings |
 | 16 Aug 2015 | Initial version |
 
 
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Foswiki:Main.PhilippGortan"}%
-%META:FIELD{name="Copyright" title="Copyright" value="2015, Foswiki:Main.PhilippGortan, Foswiki:Main.MichaelDaum. All Rights Reserved"}%
+%META:FIELD{name="Copyright" title="Copyright" value="2015, Foswiki:Main.PhilippGortan. 2015-2016, Foswiki Contributors. All Rights Reserved"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
-%META:FIELD{name="Home" title="Home" value="http://foswiki.org/Extensions/%$ROOTMODULE%"}%
+%META:FIELD{name="Home" title="Home" value="https://foswiki.org/Extensions/%$ROOTMODULE%"}%
 %META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
 %META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
 %META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%$ROOTMODULE%"}%
-%META:FIELD{name="Support" title="Support" value="http://foswiki.org/Support/%$ROOTMODULE%"}%
+%META:FIELD{name="Support" title="Support" value="https://foswiki.org/Support/%$ROOTMODULE%"}%
 %META:FIELD{name="Version" title="Version" value="%$VERSION%"}%

@@ -7,8 +7,8 @@ use warnings;
 use Foswiki::Func    ();    # The plugins API
 use Foswiki::Plugins ();    # For the API version
 
-our $VERSION = '1.01';
-our $RELEASE = '02 Sep 2016';
+our $VERSION = '1.02';
+our $RELEASE = '22 Apr 2022';
 our $SHORTDESCRIPTION =
   'Embed presentations, spreadsheets, PDFs and other documents';
 our $NO_PREFS_IN_TOPIC = 1;
@@ -59,16 +59,34 @@ sub _DOCUMENTVIEWER {
     my ( $width, $height );
 
     if ( $format eq 'portrait' ) {
-        $width  = 724;
-        $height = 1024;
+        if ( $params->{height} ) {
+            $height = $params->{height};
+            $width  = int( 724 * $height / 1024 );
+        }
+        else {
+            $width = $params->{width} || 724;
+            $height = int( 1024 * $width / 724 );
+        }
     }
     elsif ( $format eq 'landscape' ) {
-        $width  = 1024;
-        $height = 724;
+        if ( $params->{height} ) {
+            $height = $params->{height};
+            $width  = int( 1024 * $height / 724 );
+        }
+        else {
+            $width = $params->{width} || 1024;
+            $height = int( 724 * $width / 1024 );
+        }
     }
     elsif ( $format eq 'screen' ) {
-        $width  = 1024;
-        $height = 768;
+        if ( $params->{height} ) {
+            $height = $params->{height};
+            $width  = int( 1024 * $height / 768 );
+        }
+        else {
+            $width = $params->{width} || 1024;
+            $height = int( 768 * $width / 1024 );
+        }
     }
     else {
         $width  = $params->{width}  || 724;
@@ -84,7 +102,7 @@ qq(<iframe src="$url" width="$width" height="$height" allowfullscreen webkitallo
 __END__
 Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 
-Copyright (C) 2015-2016 Foswiki Contributors. Foswiki Contributors
+Copyright (C) 2015-2022 Foswiki Contributors. Foswiki Contributors
 are listed in the AUTHORS file in the root of this distribution.
 NOTE: Please extend that file, not this notice.
 

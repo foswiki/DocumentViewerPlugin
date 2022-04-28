@@ -2,7 +2,6 @@
 data/System/DocumentViewerPlugin.txt 0444 Documentation page
 data/System/VarDOCUMENTVIEWER.txt 0444 Tag documentation
 lib/Foswiki/Plugins/DocumentViewerPlugin.pm 0444 Perl module
-lib/Foswiki/Plugins/DocumentViewerPlugin/Config.spec 0444 Configuration
 pub/System/DocumentViewerPlugin/ViewerJS/compatibility.js 0444
 pub/System/DocumentViewerPlugin/ViewerJS/example.local.css 0444
 pub/System/DocumentViewerPlugin/ViewerJS/images/kogmbh.png 0444
